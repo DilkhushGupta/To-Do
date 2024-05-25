@@ -29,10 +29,6 @@ button{
   cursor: pointer;
   outline: none;
 }
-/* #list-container li{
-  list-style-type: circle;
-  text-align: left;
-} */
 #list-container div{
   text-align: left;
   margin-bottom: 10px; 
@@ -51,4 +47,3 @@ button{
   background-color: rgb(44, 177, 62);
   cursor: pointer;
 }
-
