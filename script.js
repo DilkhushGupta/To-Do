@@ -8,19 +8,15 @@ function addTask(){
         let box = document.createElement("div");
         box.innerHTML = `${inputText.value} <button>del</button>`;
         listContainer.appendChild(box);
-
         inputText.value = "";
 
+        let del_btn = box.querySelector("button");
+        del_btn.addEventListener("click",remove);
+        function remove(){
+            box.remove();
+        }
+
+
     }
-}
-let btn = box.querySelector("button");
-btn.addEventListener("click",remove);
-function remove(){
-    box.remove();
 }
 
-inputText.addEventListener('keypress', function(e){
-    if(e.key=== 'Enter'){
-        console.log("Hello Enter Press");
-    }
-})
